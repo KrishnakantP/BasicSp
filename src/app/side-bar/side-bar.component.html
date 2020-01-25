@@ -1,0 +1,94 @@
+<ng-container>
+    <mat-toolbar class="midas-header">
+        <mat-toolbar-row class="smart-toolbar-row">
+            <div class="smart-hamburger-background">
+                <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="sidenav.toggle();" class="smart-hamburger" color="#bfc2c7">
+                <mat-icon aria-label="Side nav toggle icon" class="smart-hamburger-icon">menu</mat-icon>
+              </button>
+            </div>
+            <mat-icon class="smart-hbo-logo" svgIcon="hbo-logo"></mat-icon>
+            <span class="smart-er">Project name</span>
+            <sup class="smart-b">b</sup>
+            <span class="smart-spacer"></span>
+            <small class="smart-welcome"> Welcome </small>
+            <small class="smart-current-user-name">Krishnakant pandey</small>
+        </mat-toolbar-row>
+    </mat-toolbar>
+    <div *ngIf="showsettingpanel">
+        <div class="up-arrow"></div>
+    </div>
+    <mat-sidenav-container class="midas-container" (click)="hideSettingPanel()">
+        <mat-sidenav #sidenav mode="side" opened class="midas-sidenav" [fixedInViewport]="false" [fixedTopGap]="0" [fixedBottomGap]="0">
+            <mat-nav-list>
+                <a mat-list-item href="#">
+                    <p mat-line>
+                        <mat-icon svgIcon="affiliate"></mat-icon>
+                    </p>
+                    <p mat-line>
+                        <small>Link 1</small>
+                    </p>
+                </a>
+                <mat-divider></mat-divider>
+                <a mat-list-item href="#">
+                    <p mat-line>
+                        <mat-icon svgIcon="subscriber"></mat-icon>
+                    </p>
+                    <p mat-line>
+                        <small>Link 2</small>
+                    </p>
+                </a>
+                <mat-divider></mat-divider>
+                <a mat-list-item href="#">
+                    <p mat-line>
+                        <mat-icon svgIcon="deals"></mat-icon>
+                    </p>
+                    <p mat-line>
+                        <small>Link 3</small>
+                    </p>
+                </a>
+                <mat-divider></mat-divider>
+                <a mat-list-item href="#">
+                    <p mat-line>
+                        <mat-icon svgIcon="accruals"></mat-icon>
+                    </p>
+                    <p mat-line>
+                        <small>Link 4</small>
+                    </p>
+                </a>
+                <mat-divider></mat-divider>
+                <a mat-list-item href="#">
+                    <p mat-line>
+                        <mat-icon svgIcon="billing"></mat-icon>
+                    </p>
+                    <p mat-line>
+                        <small>Link 5</small>
+                    </p>
+                </a>
+                <mat-divider></mat-divider>
+                <a mat-list-item href="#">
+                    <p mat-line>
+                        <mat-icon svgIcon="invoices"></mat-icon>
+                    </p>
+                    <p mat-line>
+                        <small>Link 6</small>
+                    </p>
+                </a>
+                <a mat-list-item class="sidenav-content-center" routerLink="user-admin" routerLinkActive="active-link">
+                    <p mat-line>
+                        <mat-icon svgIcon="admin"></mat-icon>
+                    </p>
+                    <p mat-line>
+                        <small>Link 7</small>
+                    </p>
+                </a>
+                <mat-divider></mat-divider>
+            </mat-nav-list>
+        </mat-sidenav>
+        <mat-sidenav-content (click)="hideSettingPanel() ">
+            <div class="midas-outlet">
+                <router-outlet></router-outlet>
+            </div>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+
+</ng-container>

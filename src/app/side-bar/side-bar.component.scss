@@ -1,0 +1,226 @@
+.smart-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 57px;
+    background: #dee1e6;
+}
+
+.smart-toolbar-row {
+    padding: 0;
+    height: 57px;
+}
+
+.smart-hamburger {
+    width: 74px;
+    height: 57px;
+}
+
+.smart-hamburger-icon {
+    color: #bfc2c7;
+}
+
+.smart-hamburger-background {
+    width: 74px;
+    height: 57px;
+    background-color: #3b3b3b;
+}
+
+.smart-spacer {
+    flex: 1 1 auto;
+}
+
+.smart-hbo-logo {
+    height: 24px;
+    width: 64px;
+    padding-left: 20px;
+}
+
+.smart-er {
+    color: #717171;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.smart-b {
+    font-size: 15px;
+    font-weight: normal;
+    color: #2598ba;
+    padding-left: 2px;
+    padding-bottom: 20px;
+}
+
+.smart-current-user-name {
+    padding-right: 20px;
+    padding-left: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.smart-welcome {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.midas-container {
+    position: absolute;
+    top: 57px;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.username {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #000000;
+}
+
+.mat-button {
+    min-width: 30px;
+    padding: 0px;
+}
+
+.midas-mat-icon {
+    height: 24px;
+    width: 64px;
+}
+
+.midas-outlet {
+    display: block;
+    bottom: 0;
+    height: 100%;
+}
+
+.midas-sidenav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 74px;
+    background: #3b3b3b;
+}
+
+.mat-list-item {
+    color: #bfc2c7;
+    height: 76px !important;
+}
+
+a.mat-list-item {
+    text-align: center;
+    font-size: 11px;
+}
+
+.nav-icons {
+    position: relative;
+    width: 60px;
+}
+
+.mat-list-item:hover {
+    background-color: black;
+}
+
+.active-link {
+    background: #000000;
+}
+
+.midas-header {
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 57px !important;
+    background: #dee1e6;
+    -webkit-box-shadow: 0px 5px 2px 0px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0px 5px 2px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 5px 2px 0px rgba(0, 0, 0, 0.12);
+}
+
+.midas-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: 1px solid rgb(161, 160, 160);
+}
+
+li {
+    list-style-type: none;
+    padding: 5px;
+}
+
+li .mat-icon {
+    vertical-align: middle;
+}
+
+.nav-icons.exit.mat-icon {
+    width: 20px !important;
+}
+
+.mat-card-actions {
+    margin-left: 8px;
+}
+
+.mat-card {
+    padding: 0px;
+}
+
+.example-spacer {
+    flex: 0.9 1 auto;
+}
+
+::ng-deep .cdk-overlay-connected-position-bounding-box {
+    left: 100px !important;
+}
+
+::ng-deep .cdk-overlay-container {
+    height: auto !important;
+    width: auto !important;
+}
+
+::ng-deep .mat-menu-panel {
+    background-color: black;
+}
+
+::ng-deep .mat-menu-item {
+    color: #a0a0a0;
+}
+
+::ng-deep .mat-menu-panel {
+    background-color: black;
+}
+
+::ng-deep .mat-menu-item {
+    color: #a0a0a0;
+}
+
+.up-arrow::after {
+    content: '';
+    position: absolute;
+    height: 0;
+    top: 46px;
+    left: 1197px;
+    margin-left: 0px;
+    border-top: 17px solid transparent;
+    border-left: 21px solid #ffffff;
+    transform: rotate(-209deg);
+    border-bottom: 10px solid transparent;
+}
+
+a {
+    color: inherit;
+}
+
+.mat-toolbar-row,
+.mat-toolbar-single-row {
+    padding: 0px;
+}
+
+::ng-deep .mat-list-item-content {
+    padding: 0px !important;
+}
+
+::ng-deep .mat-divider {
+    display: none !important;
+}
